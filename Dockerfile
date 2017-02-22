@@ -8,5 +8,8 @@ WORKDIR /opt/kafka-websocket
 
 RUN mvn package
 
+
+EXPOSE 7080
+
 CMD java -jar target/kafka-websocket-0.8.2-SNAPSHOT-shaded.jar
 
